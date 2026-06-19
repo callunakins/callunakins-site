@@ -8,17 +8,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&amp;family=Playfair+Display:wght@700&amp;display=swap');
-
         body { font-family: 'Inter', system_ui, sans-serif; }
         .heading-serif { font-family: 'Playfair Display', Georgia, serif; }
 
         .hero-bg {
-            background-image: linear-gradient(rgba(9,9,11,0.58), rgba(9,9,11,0.72)), url('hero.jpg');
+            background-image: linear-gradient(rgba(9,9,11,0.58), rgba(9,9,11,0.72)), url('hero.webp');
             background-size: cover;
             background-position: center;
-            background-attachment: fixed;
+            background-attachment: fixed;   /* ← This creates the parallax effect */
         }
-
         .section-card {
             transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         }
