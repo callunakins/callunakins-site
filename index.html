@@ -4,15 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>callunakins • capability meets connection</title>
-    
-    <!-- Favicon -->
     <link rel="icon" type="image/png" href="favicon.png">
-    <link rel="apple-touch-icon" href="favicon.png">
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="apple-touch-icon" href="favicon.png">    
+    
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&amp;family=Playfair+Display:wght@700&amp;display=swap');
+
         body { font-family: 'Inter', system_ui, sans-serif; }
         .heading-serif { font-family: 'Playfair Display', Georgia, serif; }
 
@@ -20,14 +19,16 @@
             background-image: linear-gradient(rgba(9,9,11,0.58), rgba(9,9,11,0.72)), url('hero.webp');
             background-size: cover;
             background-position: center;
-            background-attachment: fixed;   /* ← This creates the parallax effect */
+            background-attachment: fixed;
         }
+
         .section-card {
             transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         }
-        .section-card:hover {
-            transform: translateY(-4px);
-            border-color: #f59e0b;
+
+        .small-caps {
+            font-variant: small-caps;
+            letter-spacing: 0.5px;
         }
     </style>
 </head>
@@ -50,7 +51,7 @@
     </nav>
 
     <!-- Hero -->
-    <div class="hero-bg min-h-[80dvh] flex items-center justify-center">
+    <div class="hero-bg min-h-[100dvh] flex items-center justify-center">
         <div class="max-w-3xl mx-auto px-6 text-center">
             <h1 class="text-6xl md:text-7xl font-semibold tracking-tighter text-white mb-4 heading-serif">callunakins</h1>
             <p class="text-2xl md:text-3xl text-white/90 tracking-tight">capability meets connection</p>
@@ -67,34 +68,37 @@
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
             
             <!-- Desolate Sparks -->
-            <div class="section-card bg-zinc-900 border border-zinc-800 rounded-3xl p-8">
-                <h3 class="text-2xl font-semibold tracking-tight mb-3">Desolate Sparks</h3>
+            <div class="section-card bg-zinc-900 border border-zinc-800 hover:border-amber-400/60 rounded-3xl p-8">
+                <h3 class="text-2xl font-semibold tracking-tight mb-3 text-amber-300">Desolate Sparks</h3>
                 <p class="text-zinc-400 mb-4">"We are the universe experiencing itself."</p>
-                <p class="text-sm text-zinc-400">Moody atmospheric digital wallpapers exploring consciousness, connection, and the beauty found in desolation.</p>
+                <p class="text-sm text-zinc-400">Moody atmospheric digital wallpapers exploring consciousness, connection, and the quiet beauty found in desolation.</p>
                 <div class="mt-6">
-                    <a href="#" class="text-sm text-amber-400 hover:text-amber-300">Explore Desolate Sparks →</a>
+                    <a href="#" class="text-sm text-amber-400 hover:text-amber-300">Explore the work →</a>
                 </div>
             </div>
 
             <!-- just.calluna -->
-            <div class="section-card bg-zinc-900 border border-zinc-800 rounded-3xl p-8">
-                <h3 class="text-2xl font-semibold tracking-tight mb-3">just.calluna</h3>
+            <div class="section-card bg-zinc-900 border border-zinc-800 hover:border-emerald-400/60 rounded-3xl p-8">
+                <h3 class="text-2xl font-semibold tracking-tight mb-3 text-emerald-300">just.calluna</h3>
                 <p class="text-zinc-400 mb-4">"Presence, rooted."</p>
-                <p class="text-sm text-zinc-400">Slow, intentional living and creative practice rooted in presence and simplicity.</p>
+                <p class="text-sm text-zinc-400">Slow, intentional living and creative practice rooted in presence, simplicity, and deep connection to place.</p>
+                <div class="mt-6 text-sm text-emerald-400">Coming soon</div>
             </div>
 
             <!-- callunaKIDS -->
-            <div class="section-card bg-zinc-900 border border-zinc-800 rounded-3xl p-8">
-                <h3 class="text-2xl font-semibold tracking-tight mb-3">callunaKIDS</h3>
+            <div class="section-card bg-zinc-900 border border-zinc-800 hover:border-rose-400/60 rounded-3xl p-8">
+                <h3 class="text-2xl font-semibold tracking-tight mb-3 text-rose-300 small-caps">callunaKIDS</h3>
                 <p class="text-zinc-400 mb-4">"where the heather blooms brightest"</p>
-                <p class="text-sm text-zinc-400">Neurodivergent parenting, structure, and creating safe, beautiful spaces for children to thrive.</p>
+                <p class="text-sm text-zinc-400">Neurodivergent parenting, gentle structure, and creating safe, beautiful spaces where children can thrive.</p>
+                <div class="mt-6 text-sm text-rose-400">Coming soon</div>
             </div>
 
             <!-- Im Unendlich -->
-            <div class="section-card bg-zinc-900 border border-zinc-800 rounded-3xl p-8">
-                <h3 class="text-2xl font-semibold tracking-tight mb-3">Im Unendlich</h3>
+            <div class="section-card bg-zinc-900 border border-zinc-800 hover:border-indigo-400/60 rounded-3xl p-8">
+                <h3 class="text-2xl font-semibold tracking-tight mb-3 text-indigo-300 small-caps">Im Unendlich</h3>
                 <p class="text-zinc-400 mb-4">"emergence; without plan, force, or limits"</p>
-                <p class="text-sm text-zinc-400">Explorations in philosophy, emergence, and creative work that unfolds without force.</p>
+                <p class="text-sm text-zinc-400">Explorations in philosophy, emergence, and creative work that unfolds without force or rigid structure.</p>
+                <div class="mt-6 text-sm text-indigo-400">Coming soon</div>
             </div>
 
         </div>
@@ -112,8 +116,17 @@
         </div>
     </div>
 
+    <!-- Name Meaning -->
+    <div class="max-w-3xl mx-auto px-6 py-12 text-center text-zinc-400">
+        <p class="text-sm leading-relaxed">
+            The name <span class="text-white">callunakins</span> is drawn from <em>Calluna</em>, the botanical genus for heather — 
+            a resilient plant that thrives in quiet, often harsh places. The “kins” ending carries a sense of the small, the familiar, 
+            and the deeply personal. Together, it speaks to a way of being that is both rooted and reaching.
+        </p>
+    </div>
+
     <!-- Connect -->
-    <div id="connect" class="max-w-xl mx-auto px-6 py-20 text-center">
+    <div id="connect" class="max-w-xl mx-auto px-6 py-16 text-center border-t border-zinc-800">
         <h2 class="text-3xl font-semibold tracking-tight mb-4">Let’s connect</h2>
         <p class="text-zinc-400 mb-8">Whether it’s about creative work, collaboration, or simply reaching out.</p>
         
